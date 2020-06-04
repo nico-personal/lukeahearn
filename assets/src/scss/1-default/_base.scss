@@ -1,0 +1,214 @@
+
+/*------------------------------------------------------------
+   2  Typography
+------------------------------------------------------------*/
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: #ffffff;
+    color: $dark_color;
+    font-family: $body_font;
+    @include rem("font-size", 16);
+    font-weight: 400;
+    overflow-x: hidden;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+}
+
+a {
+    text-decoration: none;
+    color: $link_color;
+    cursor: pointer;
+
+    &:hover,
+    &:focus,
+    &:visited {
+      cursor: pointer;
+      text-decoration: none; 
+      color: $hover_link_color;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family:  $font_heading;
+    color: $darker_color;
+}
+
+h1,
+.h1 {
+    @include fontsize(42);
+}
+
+h2,
+.h2 {
+    @include fontsize(36);
+}
+
+h3,
+.h3 {
+    @include fontsize(30);
+}
+
+h4,
+.h4 {
+    @include fontsize(24);
+}
+
+h5,
+.h5 {
+    @include fontsize(18);
+}
+
+h6,
+.h6 {
+    @include fontsize(14);
+}
+
+p {
+    margin-bottom: 20px;
+    @include fontsize(16);
+    line-height: 1.8;
+    color: $primary_text_color;
+
+}
+
+blockquote {
+    padding: 0;
+
+    p {
+        @include fontsize(22);
+        color: $dark_color;
+        border-left-width: 3px;
+        padding: 30px;
+        background: $light_color;
+        font-weight: 500;
+        line-height: 1.9;
+    }
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+dt {
+    font-weight: 700;
+}
+
+dd {
+    margin: 0 20px 20px;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0; 
+  }
+  thead th {
+      border-bottom: 1px solid #bbb;
+      padding-bottom: 5px;
+  }
+  
+  th {
+      padding: 5px;
+      text-align: left;
+  }
+  
+  tr {
+      border-bottom: 1px solid #eee;
+  }
+  
+  td {
+      padding: 5px;
+  }
+  
+  hr {
+    background-color: #bbb;
+    border: 0;
+    height: 1px;
+    margin-bottom: 20px;
+}
+
+img {
+  max-width: 100%; 
+  height: auto;
+}
+
+dfn,
+cite,
+em,
+i {
+    font-style: italic;
+}
+
+
+/*------------------------------------------------------------
+   3 Buttons & Links
+------------------------------------------------------------*/
+
+button {
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  display: block;
+  padding: 0;
+  outline: none !important;
+  cursor: pointer;
+}
+
+.btn {
+    height: 50px;
+    line-height: 45px !important;
+    min-width: 170px;
+    padding: 0px 5px !important;
+    border-radius: 50px;
+    background: transparent;
+    margin-left: 10px;
+    color: #fff;
+    border: 2px solid #f0f0f0 !important;
+    font-size: 16px;
+    text-transform: capitalize;
+    margin-right: 10px;
+    font-weight: 700;
+    -o-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    position: relative;
+
+    &:hover {
+        color: #fff;
+        border: 2px solid #9153fe !important;
+        background: #9153fe !important;
+        -o-transition: all .5s ease-in-out;
+        -webkit-transition: all .5s ease-in-out;
+        transition: all .5s ease-in-out;  
+    }
+}
+
+.btn-style-1 {
+  
+}
+
+.btn-style-2 {
+    
+}
+
+.btn-style-3 {
+    
+}
+
+.btn-style-4 {
+    
+}
