@@ -14,6 +14,9 @@
 Primary style
 
 -------------------------------- */
+.portfolio-carousel-wrap .additional_image img {
+	height: inherit;
+}
 .slider-section {
 	background-size: cover !important;
 	height: 100vh;
@@ -44,7 +47,7 @@ Primary style
 	}
 	.slider-section {
 		background-size: cover !important;
-		height: 50vh !important;
+		height: 60vh !important;
 		background-position: top center !important;
 	}
 }
@@ -77,6 +80,9 @@ Primary style
 a:hover {
 	color: #337ab7 !important;
 }
+span.credit_text {
+	color: #337ab7;
+}
 .page_copyright .widget-area.terms_privacy li a {
 	color: #fff;
 }
@@ -84,7 +90,7 @@ a:hover {
 	padding: 0 30px 0 0;
 }
 .page_copyright .footer-menu .widget_nav_menu a {
-	color: #fff !important;
+	color: #fff;
 }
 .page_copyright .footer-menu {
 	text-transform: uppercase;
@@ -126,6 +132,40 @@ a:hover {
 	.page_copyright .widget_nav_menu ul.menu > li a {
 		padding: 0;
 	}
+}
+@media (max-width: 991px) {
+	.nf-field-container {
+		margin-bottom: 25px !important;
+	}
+}
+.form-wrapper .nf-error.field-wrap .nf-field-element:after {
+	height: 75px;
+	line-height: 85px;
+	top: 0px;
+	right: 0px;
+}
+input:not([type="button"]) {
+	height: 75px !important;
+}
+.form-wrapper input[type="button"] {
+	font-weight: bold;
+	height: 75px !important;
+	background: none !important;
+	border: 2px solid #267abf !important;
+	color: #267abf !important;
+	padding: 0 50px;
+}
+.nf-form-fields-required,
+.nf-error-msg.nf-error-field-errors {
+	display: none;
+}
+section#section-c66129d:before {
+	content: " ";
+	background: #242d3c;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0.8;
 }
 .years-carousel .owl-nav > div:after {
 	content: none !important;
@@ -12692,8 +12732,9 @@ aside .widget_popular_entries .widget-title {
 		width: 160px;
 		position: absolute;
 		left: 0;
-		top: 50%;
-		transform: translateY(-50%);
+		height: 100%;
+		/* top: 50%;
+		transform: translateY(-50%); */
 	}
 }
 .portfolio-shortcode.owl-carousel.owl-loaded {
